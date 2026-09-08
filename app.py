@@ -289,27 +289,27 @@ def send_sms(config, client_id, to_number, message):
 @app.route('/')
 def home():
     return f"""
-╔═══════════════════════════════════════════════════════════╗
-║     🔥 SMS BOMBER API - {len(FIREBASE_CONFIGS)} FIREBASE DBs    ║
-╠═══════════════════════════════════════════════════════════╣
-║                                                         ║
-║  📌 USAGE:                                             ║
-║                                                         ║
-║  GET /send?number=9999999999&msg=Hello&count=5        ║
-║                                                         ║
-║  📊 FEATURES:                                          ║
-║                                                         ║
-║  ✅ {len(FIREBASE_CONFIGS)} Firebase Databases           ║
-║  ✅ Online devices only                                ║
-║  ✅ Rotate devices                                     ║
-║  ✅ {MAX_SMS_PER_SIM} SMS per SIM per day              ║
-║  ✅ DDoS Protection (50 req/hour)                     ║
-║                                                         ║
-╠═══════════════════════════════════════════════════════════╣
-║  👨‍💻 Developer: @noobsater                              ║
-║  📢 Channel: t.me/noob11001                            ║
-║  📢 Channel: t.me/noobsterrr                           ║
-╚═══════════════════════════════════════════════════════════╝
+â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+â•‘     ðŸ”¥ SMS BOMBER API - {len(FIREBASE_CONFIGS)} FIREBASE DBs    â•‘
+â• â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•£
+â•‘                                                         â•‘
+â•‘  ðŸ“Œ USAGE:                                             â•‘
+â•‘                                                         â•‘
+â•‘  GET /send?number=9999999999&msg=Hello&count=5        â•‘
+â•‘                                                         â•‘
+â•‘  ðŸ“Š FEATURES:                                          â•‘
+â•‘                                                         â•‘
+â•‘  âœ… {len(FIREBASE_CONFIGS)} Firebase Databases           â•‘
+â•‘  âœ… Online devices only                                â•‘
+â•‘  âœ… Rotate devices                                     â•‘
+â•‘  âœ… {MAX_SMS_PER_SIM} SMS per SIM per day              â•‘
+â•‘  âœ… DDoS Protection (50 req/hour)                     â•‘
+â•‘                                                         â•‘
+â• â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•£
+â•‘  ðŸ‘¨â€ðŸ’» Developer: @noobsater                              â•‘
+â•‘  ðŸ“¢ Channel: t.me/noob11001                            â•‘
+â•‘  ðŸ“¢ Channel: t.me/noobsterrr                           â•‘
+â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
     """
 
 @app.route('/status')
@@ -384,7 +384,7 @@ def send_sms_api():
     return jsonify({
         "success": sent > 0,
         "target": number,
-        "message": message[:50] + ("..." if len(message) > 50 else ""),  # ✅ FIXED LINE
+        "message": message[:50] + ("..." if len(message) > 50 else ""),
         "requested": max_count,
         "sent": sent,
         "failed": failed,
